@@ -41,15 +41,17 @@
     <table class="table table-bordered">
 
         <tr>
-
-            <th>No</th>
-
+            <th>ID</th>
             <th>Nombres</th>
-
             <th>Apellidos</th>
+            <th>Cedula</th>
+            <th>Email</th>
+            <th>Lugar de nacimiento</th>
+            <th>Sexo</th>
+            <th>Estado civil</th>
+            <th>Teléfono</th>
 
-            <th width="280px">Action</th>
-
+        <th width="280px">Acción</th>
         </tr>
 
         @foreach ($empleados as $empleado)
@@ -57,11 +59,14 @@
         <tr>
 
             <td>{{ ++$i }}</td>
-
             <td>{{ $empleado->nombres }}</td>
-
             <td>{{ $empleado->apellidos }}</td>
-
+            <td>{{ $empleado->cedula }}</td>
+            <td>{{ $empleado->email }}</td>
+            <td>{{ $empleado->lugar_nacimiento }}</td>
+            <td>{{ $empleado->sexo }}</td>
+            <td>{{ $empleado->estado_civil }}</td>
+            <td>{{ $empleado->telefono }}</td>
             <td>
 
                 <form action="{{ route('empleados.destroy',$empleado->id) }}" method="POST">

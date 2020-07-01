@@ -56,42 +56,54 @@
 
    
 
-         <div class="row">
+        <div class="row">
 
             <div class="col-xs-12 col-sm-12 col-md-12">
 
                 <div class="form-group">
 
                     <strong>Nombres:</strong>
-
                     <input type="text" name="nombres" value="{{ $empleado->nombres }}" class="form-control" placeholder="nombres">
-
-                </div>
-
-            </div>
-
-            <div class="col-xs-12 col-sm-12 col-md-12">
-
-                <div class="form-group">
-
+                    
                     <strong>Apellidos:</strong>
-
                     <input type="text" name="apellidos" value="{{ $empleado->apellidos }}" class="form-control" placeholder="apellidos">
 
+                    <strong>Cedula:</strong>
+                    <input type="text" name="cedula" value="{{ $empleado->cedula }}" class="form-control" placeholder="cedula">
+
+                    <strong>Email:</strong>
+                    <input type="text" name="email" value="{{ $empleado->email }}" class="form-control" placeholder="email">
+
+                    <strong>Lugar de nacimiento:</strong>
+                    <input type="text" name="lugar_nacimiento" value="{{ $empleado->lugar_nacimiento }}" class="form-control" placeholder="lugar_nacimiento">
+
+                    <strong>Sexo:</strong>
+
+                    <select name="sexo" id="sexo" class="form-control">
+                        <option value="{{ $empleado->sexo }}">{{ $empleado->sexo }}</option>
+                        <option value="masculino">Hombre</option>
+                        <option value="femenino">Mujer</option>
+                        <option value="otro">Otro</option>
+                    </select>
+
+                    <strong>Estado civil:</strong>
+
+                    <select name="estado_civil" id="estado_civil" class="form-control">
+                        <option value="{{ $empleado->estado_civil }}">{{ $empleado->estado_civil}}</option>
+                        <option value="soltero">Soltero</option>
+                        <option value="casado">Casado</option>
+                    </select>
+
+        
+                    <strong>Teléfono:</strong>
+                    <input type="text" name="telefono" value="{{ $empleado->telefono }}" class="form-control" placeholder="telefono">
+
+
+                    <button type="submit" class="btn btn-primary">Aceptar</button>
+
                 </div>
-
             </div>
-
-            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-
-              <button type="submit" class="btn btn-primary">Aceptar</button>
-
-            </div>
-
         </div>
-
-   
-
     </form>
 
 @endsection

@@ -61,30 +61,47 @@
             <div class="form-group">
 
                 <strong>Nombres:</strong>
-
-                <input type="text" name="nombres" class="form-control" placeholder="Name">
-
-            </div>
-
-        </div>
-
-        <div class="col-xs-12 col-sm-12 col-md-12">
-
-            <div class="form-group">
-
+                <input type="text" name="nombres" class="form-control" placeholder="Nombres">
+                
                 <strong>Apellidos:</strong>
+                <input type="text" name="apellidos" class="form-control" placeholder="Apellidos">
 
-                <input type="text" name="apellidos" class="form-control" placeholder="apellidos">
+                
+                <strong>Cedula:</strong>
+                <input type="text" name="cedula" class="form-control" placeholder="Cedula">
 
-            </div>
+                
+                <strong>Email:</strong>
+                <input type="email" name="email" class="form-control" placeholder="Email">
 
-        </div>
+                
+                <strong>Lugar de nacimiento:</strong>
+                <input type="text" name="lugar_nacimiento" class="form-control" placeholder="Lugar de nacimiento">
 
-        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                <strong>Sexo:</strong>
+                <select name="sexo" id="sexo" class="form-control">
+                    <option value="masculino">Hombre</option>
+                    <option value="femenino">Mujer</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+
+                <strong>Estado civil:</strong>
+                <select name="estado_civil" id="estado_civil" class="form-control">
+                    <option value="soltero">Soltero</option>
+                    <option value="casado">Casado</option>
+                </select>
+                
+                <strong>Teléfono:</strong>
+                <input type="number" name="telefono" class="form-control" placeholder="Teléfono">
+
 
                 <button type="submit" class="btn btn-primary">Aceptar</button>
+                
+            </div>
 
         </div>
+
 
     </div>
 

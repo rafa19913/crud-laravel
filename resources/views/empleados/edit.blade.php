@@ -99,6 +99,9 @@
                     <input type="text" name="telefono" value="{{ $empleado->telefono }}" class="form-control" placeholder="telefono">
 
 
+                    <strong>ID_Departamento:</strong>
+                    <input type="text" name="id_dep" value="{{ $empleado->id_dep }}" class="form-control" placeholder="ID departamento">
+
                     <button type="submit" class="btn btn-primary">Aceptar</button>
 
                 </div>

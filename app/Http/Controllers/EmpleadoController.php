@@ -46,6 +46,7 @@ class EmpleadoController extends Controller
             'sexo' => 'required',
             'estado_civil' => 'required',
             'telefono' => 'required',
+            'id_dep' => 'required',
         ]);
 
 
@@ -92,8 +93,14 @@ class EmpleadoController extends Controller
         $request->validate([
 
             'nombres' => 'required',
-
             'apellidos' => 'required',
+            'cedula' => 'required',
+            'email' => 'required',
+            'lugar_nacimiento' => 'required',
+            'sexo' => 'required',
+            'estado_civil' => 'required',
+            'telefono' => 'required',
+            'id_dep' => 'required',
 
         ]);
 

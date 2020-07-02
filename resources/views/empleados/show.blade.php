@@ -42,6 +42,9 @@
                 <strong>Teléfono:</strong>
                 {{ $empleado->telefono }}
 <br>
+                <strong>ID departamento:</strong>
+                {{ $empleado->id_dep }}
+
             </div>
         </div>
     </div>

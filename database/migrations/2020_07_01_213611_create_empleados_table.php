@@ -11,8 +11,7 @@ class CreateEmpleadosTable extends Migration
      *
      * @return void
      */
-    public function up()
-    {
+    public function up(){
         Schema::create('empleados', function (Blueprint $table) {
             $table->id();
             $table->string('nombres');
@@ -23,6 +22,7 @@ class CreateEmpleadosTable extends Migration
             $table->enum('sexo',['masculino','femenino','otro']);
             $table->enum('estado_civil',['soltero','casado']);
             $table->integer('telefono');
+            $table->foreign('id_dep')->references('id_dep')->on('departaments');
             $table->timestamps();
         });
     }

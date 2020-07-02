@@ -95,6 +95,9 @@
                 <strong>Teléfono:</strong>
                 <input type="number" name="telefono" class="form-control" placeholder="Teléfono">
 
+                <strong>ID departamento:</strong>
+                <input value="1" type="number" name="id_dep" class="form-control" placeholder="ID departamento">
+
 
                 <button type="submit" class="btn btn-primary">Aceptar</button>
                 
